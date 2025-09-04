@@ -1,9 +1,19 @@
 
 import { Utensils, Dumbbell, Trophy, LayoutDashboard, X, LogOut, User } from 'lucide-react';
 import { useStore } from "../store/store";
+import api from '../services/api';
+import { useNavigate } from 'react-router-dom';
 
 function SideBarComponent() {
     const { setIsSidebarOpen, isSidebarOpen } = useStore();
+    const navigate = useNavigate();
+
+    const handleLogout = async () => {
+        await api.post<string>("/logout");
+        localStorage.removeItem("accessToken")
+        setIsSidebarOpen(false);
+        navigate("/login");
+    }
 
     return (
         <aside
@@ -59,10 +69,10 @@ function SideBarComponent() {
                         </a>
                     </li>
                     <li>
-                        <a href="/login" className="flex items-center gap-3 p-3 text-gray-400 rounded-xl font-semibold transition-colors hover:bg-fuchsia-600/10 hover:text-fuchsia-300">
+                        <button onClick={handleLogout} className="flex items-center gap-3 p-3 text-gray-400 rounded-xl font-semibold transition-colors hover:bg-fuchsia-600/10 hover:text-fuchsia-300">
                             <LogOut size={20} />
                             Log Out
-                        </a>
+                        </button>
                     </li>
                 </ul>
             </nav>

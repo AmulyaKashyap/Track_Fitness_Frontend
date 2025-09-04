@@ -7,7 +7,7 @@ import { useLocation } from 'react-router-dom';
 
 function MainLayout() {
   const location = useLocation();
-  const isLoginPage = location.pathname === '/login';
+  const isLoginPage = location.pathname === '/login' || location.pathname === '/signUp';
   return (
     <>
       {!isLoginPage && <Header />}

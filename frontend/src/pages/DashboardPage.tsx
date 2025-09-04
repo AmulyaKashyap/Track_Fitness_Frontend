@@ -22,6 +22,7 @@ import {
     CheckCircle,
 } from 'lucide-react';
 import WorkoutPlanGenerationPage from './WorkoutPlanGenerationPage';
+import api from '../services/api';
 interface DailyProgress {
     day: string;
     calories: number;
@@ -258,8 +259,10 @@ function DashboardPage() {
         }
     }, [waterIntake, data.goalWater]);
 
-    const handleLogWater = () => {
+    const handleLogWater = async () => {
         setWaterIntake(prev => prev + 0.25); // Add 250ml
+        const response = await api.get<string>("/test");
+        console.log(response);
     };
 
     return (
