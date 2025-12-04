@@ -1,0 +1,37 @@
+UserEntity:
+    - UID
+    - first name
+    - last name
+    - dob
+    - gender
+    - fitness score
+    - diet prefrence
+    - allergies (JSONB / string list → e.g., ["nuts","gluten"])
+    - notificationsEnabled (boolean)
+    - timezone
+    - latestWeight
+    - latestBP
+    - latestSugar
+    - height
+
+Goal:
+    - goal name
+    - target date
+    - activity level
+    - target goal value (weight may be )
+    - status field (ACTIVE, ACHIEVED, FAILED)
+
+Health History & Concerns
+    - health issue type
+    - description
+    - severity
+    - reported at
+    - updated at
+
+MetricEntity
+ - height
+ - weight
+ - bodyFat %
+ - recorded at (timestamp)
+
+

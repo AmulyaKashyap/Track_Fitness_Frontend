@@ -1,23 +1,8 @@
-
-import type { WorkoutPlan } from '../services/WorkoutPlanGenerator';
-import { generateWorkoutPlan } from '../services/WorkoutPlanGenerator';
-import { useState, useRef, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import {
-    TrendingUp,
     Utensils,
     Zap,
     Dumbbell,
-    Trophy,
-    Goal,
-    LayoutDashboard,
-    Sparkles,
-    Loader2,
-    Book,
-    Menu,
-    X,
-    Footprints,
-    Volume2,
-    Mic,
     Droplet,
     CheckCircle,
 } from 'lucide-react';
@@ -248,8 +233,8 @@ function DashboardPage() {
     const proteinPercent = Math.round((data.protein / totalMacros) * 100);
     const carbsPercent = Math.round((data.carbs / totalMacros) * 100);
     const fatsPercent = Math.round((data.fats / totalMacros) * 100);
-    const fiberPercent = Math.round((data.fiber / totalMacros) * 100);
-    const waterPercentage = Math.min(100, (waterIntake / data.goalWater) * 100);
+    // const fiberPercent = Math.round((data.fiber / totalMacros) * 100);
+    // const waterPercentage = Math.min(100, (waterIntake / data.goalWater) * 100);
 
     useEffect(() => {
         if (waterIntake >= data.goalWater) {

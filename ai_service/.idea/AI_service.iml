@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../ai_service">
+      <excludeFolder url="file://$MODULE_DIR$/../ai_service/.venv" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.10 (diet_and_fitness_service)" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

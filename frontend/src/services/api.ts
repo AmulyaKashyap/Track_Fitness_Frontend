@@ -3,7 +3,7 @@ import type { AxiosInstance, AxiosResponse } from "axios";
 
 // Create an Axios instance
 const api: AxiosInstance = axios.create({
-  baseURL: "http://localhost:8080/api", // Change this to your backend URL
+  baseURL: (import.meta.env.AUTH_SERVICE_API as string) ?? "http://localhost:8080/api", // Change this to your backend URL
   headers: {
     "Content-Type": "application/json",
   },

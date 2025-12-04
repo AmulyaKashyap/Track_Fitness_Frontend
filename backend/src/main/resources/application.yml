@@ -1,0 +1,42 @@
+server:
+  servlet:
+    context-path: /api
+  port: 8080
+spring:
+  application:
+    name: track_fitness
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 473965886635-lpj3pb0kivmf5867ntf25b856hu6oeao.apps.googleusercontent.com
+            client-secret: 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
+            redirect-uri: "{baseUrl}/login/oauth2/code/google"
+            scope:
+              - email
+              - profile
+        provider:
+          google:
+            authorization-uri: https://accounts.google.com/o/oauth2/auth
+            token-uri: https://oauth2.googleapis.com/token
+            user-info-uri: https://www.googleapis.com/oauth2/v3/userinfo
+  datasource:
+    url: jdbc:postgresql://localhost:5432/track_fitness
+    username: postgres
+    password: test
+  logging:
+    level:
+      org:
+        springframework:
+          security: DEBUG
+          web:
+            client: DEBUG
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+

@@ -1,0 +1,36 @@
+~/Documents/Track_Fitness/frontend/index.html
+Warning:(6, 48) Cannot resolve directory 'src'
+Warning:(6, 52) Cannot resolve directory 'assets'
+Warning:(6, 59) Cannot resolve file 'fav.png'
+Warning:(8, 16) Cannot resolve directory 'src'
+Warning:(8, 20) Cannot resolve file 'Index.css'
+Warning:(14, 31) Cannot resolve directory 'src'
+Warning:(14, 35) Cannot resolve file 'main.tsx'
+~/Documents/Track_Fitness/backend/src/main/java/com/kashmau/track_fitness/authService/security/JwtService.java
+Warning:(20, 27) Field can be converted to a local variable
+Warning:(74, 19) Method 'extractEmail(java.lang.String)' is never used
+Warning:(79, 19) Method 'extractRole(java.lang.String)' is never used
+Warning:(96, 60) Parameter 'userDetails' is never used
+~/Documents/Track_Fitness/backend/build.gradle
+~/Documents/Track_Fitness/backend/src/main/java/com/kashmau/track_fitness/authService/services/UserService.java
+Warning:(25, 35) Field 'encoder' may be 'final'
+~/Documents/Track_Fitness/backend/src/main/java/com/kashmau/track_fitness/authService/security/JwtFilter.java
+Warning:(31, 85) Not annotated parameter overrides @NonNullApi parameter
+Warning:(31, 107) Not annotated parameter overrides @NonNullApi parameter
+~/Documents/Track_Fitness/backend/src/main/java/com/kashmau/track_fitness/authService/controllers/AuthController.java
+Warning:(28, 14) Class 'AuthController' is never used
+Warning:(36, 23) Method 'register(com.kashmau.track_fitness.authService.dtos.RegisterRequestDto)' is never used
+Warning:(41, 30) Method 'login(com.kashmau.track_fitness.authService.dtos.LoginRequestDto, jakarta.servlet.http.HttpServletResponse)' is never used
+Warning:(56, 30) Method 'refreshAccessToken(jakarta.servlet.http.HttpServletRequest)' is never used
+Warning:(80, 19) Method 'test()' is never used
+~/Documents/Track_Fitness/backend/src/main/java/com/kashmau/track_fitness/authService/configs/SecurityConfig.java
+Warning:(33, 14) Class 'SecurityConfig' is never used
+Warning:(39, 23) Private field 'jwtFilter' is never assigned
+Warning:(42, 34) Private field 'oAuth2SuccessHandler' is never assigned
+Warning:(45, 37) Private field 'oAuth2UserService' is never assigned
+Warning:(62, 32) Method 'securityFilterChain(org.springframework.security.config.annotation.web.builders.HttpSecurity)' is never used
+Warning:(64, 40) Lambda can be replaced with method reference
+Warning:(103, 35) Method 'authenticationProvider()' is never used
+Warning:(104, 50) 'DaoAuthenticationProvider()' is deprecated
+Warning:(106, 18) 'setUserDetailsService(org.springframework.security.core.userdetails.UserDetailsService)' is deprecated
+Warning:(112, 34) Method 'authenticationManager(org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration)' is never used
